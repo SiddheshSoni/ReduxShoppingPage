@@ -14,7 +14,7 @@ const Cart = () => {
           return <CartItem key={item.id} item={item} />
         })}
       </ul>
-      <div className='d-flex justify-content-between'>
+      <div className={classes.total}>
         <h2>Total:</h2>
         <h2>${totalAmount}</h2>
       </div>

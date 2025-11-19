@@ -3,6 +3,7 @@ import Card from '../UI/Card';
 import classes from './ProductItem.module.css';
 import { cartActions } from '../../store/cartSlice';
 
+
 const ProductItem = (props) => {
   const dispatch = useDispatch();
 
@@ -11,6 +12,8 @@ const ProductItem = (props) => {
   const addtoCartHandler= ()=>{
     dispatch(cartActions.addToCart({ id, title, price }));
   }
+
+  
 
   return (
     <li key={id} className={classes.item}>
